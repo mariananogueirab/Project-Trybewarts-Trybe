@@ -93,7 +93,7 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 
   - Projeto em dupla.
   - Será `1` dia de projeto.
-  - Data de entrega para avaliação final do projeto: `26/06/2021 - 14:00h`.
+  - Data de entrega para avaliação final do projeto: `23/06/2021 - 14:00h`.
 
 # Instruções para entregar seu projeto
 
