@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 // Requisito 3:
-=======
->>>>>>> 851d4f2e9299b01d0075a1aa1b0b74502f4adf6d
 const botao = document.querySelector('#botao-id');
 
 botao.addEventListener('click', () => {

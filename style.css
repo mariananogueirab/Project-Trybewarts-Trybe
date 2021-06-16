@@ -13,10 +13,17 @@
   display: flex;
   align-self: center;
 }
-<<<<<<< HEAD
 
 #trybewarts-header-title {
   align-self: center;
 }
-=======
->>>>>>> 851d4f2e9299b01d0075a1aa1b0b74502f4adf6d
+
+.main-id {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
