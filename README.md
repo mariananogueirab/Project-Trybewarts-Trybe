@@ -235,7 +235,21 @@ Em caso de dúvidas, confira o material do course sobre [ESLint e Stylelint](htt
 ## Cypress
 
 Cypress é uma ferramenta de teste de front-end desenvolvida para a web.
-Você pode rodar o cypress localmente para verificar se seus requisitos estão passando, para isso execute o seguinte comando:
+Você pode rodar o cypress localmente para verificar se seus requisitos estão passando, para isso execute o um dos seguintes comandos:
+
+Para executar os testes apenas no terminal:
+
+```bash
+npm test
+```
+
+Para executar os testes e vê-los rodando em uma janela de navegador:
+
+```bash
+npm run cypress:open
+```
+
+***ou***
 
 ```bash
 npx cypress open
