@@ -1,4 +1,3 @@
-
 const botao = document.querySelector('#botao-id');
 
 botao.addEventListener('click', () => {
@@ -9,5 +8,4 @@ botao.addEventListener('click', () => {
   } else {
     alert('Login ou senha inválidos.');
   }
-
-})
+});
