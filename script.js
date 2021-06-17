@@ -10,3 +10,20 @@ botao.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const divAvaliar = document.querySelector('#div-avaliation');
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  const divRadio = document.createElement('div');
+  divAvaliar.appendChild(divRadio);
+  divRadio.className = 'divNote';
+  const label = document.createElement('label');
+  label.innerText = numbers[index];
+  divRadio.appendChild(label);
+  const radio = document.createElement('input');
+  radio.type = 'radio';
+  radio.name = 'rate';
+  radio.value = numbers[index];
+  divRadio.appendChild(radio);
+}

@@ -18,7 +18,7 @@
   align-self: center;
 }
 
-.main-id {
+.display-flex {
   display: flex;
 }
 
@@ -30,12 +30,4 @@
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-.full-name {
-  display: flex;
-}
-
-.email-casa {
-  display: flex;
 }
