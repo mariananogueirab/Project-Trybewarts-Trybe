@@ -28,6 +28,8 @@ for (let index = 0; index < numbers.length; index += 1) {
   divRadio.appendChild(radio);
 }
 
+// Requisito 18:
+
 const checkAgreement = document.querySelector('#agreement');
 
 const botaoEnviar = document.querySelector('#submit-btn');
@@ -36,3 +38,14 @@ botaoEnviar.disabled = true;
 checkAgreement.onclick = () => {
   botaoEnviar.disabled = false;
 };
+
+// Requisito 20:
+
+const maxCaracteres = 500;
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter') 
+
+textArea.addEventListener('input', () => {
+  const caractereLength = maxCaracteres - textArea.value.length;
+  counter.innerText = `${caractereLength} carácteres restantes`;
+});
