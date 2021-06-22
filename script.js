@@ -27,3 +27,12 @@ for (let index = 0; index < numbers.length; index += 1) {
   radio.value = numbers[index];
   divRadio.appendChild(radio);
 }
+
+const checkAgreement = document.querySelector('#agreement');
+
+const botaoEnviar = document.querySelector('#submit-btn');
+botaoEnviar.disabled = true;
+
+checkAgreement.onclick = () => {
+  botaoEnviar.disabled = false;
+};
