@@ -51,4 +51,3 @@ textArea.addEventListener('input', () => {
 });
 
 // Requisito 21:
-
