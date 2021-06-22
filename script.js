@@ -51,3 +51,24 @@ textArea.addEventListener('input', () => {
 });
 
 // Requisito 21:
+
+/* const divFullname = document.querySelector('#fullName');
+const divEmail = document.querySelector('#email');
+const divHouse = document.querySelector('#house');
+const divFamily = document.querySelector('#family');
+const divMaterias = document.querySelector('#materias');
+const divAvaliation = document.querySelector('#avaliation');
+const divObs = document.querySelector('#obs');
+
+const divDisplay = document.querySelector('.display');
+console.log(divDisplay);
+
+const firstName = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+
+divFullname.innerText = `Nome: ${firstName.value} ${lastName.value}`;
+
+botaoEnviar.addEventListener('click', () => {
+  divDisplay.style.display = 'none';
+  divFullname.style.display = 'flex';
+}) */

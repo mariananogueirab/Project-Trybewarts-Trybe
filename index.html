@@ -11,101 +11,131 @@
 
     <!-- Cabeçalho -->
 
-  <header class="header">
+  <header class="header display-flex">
 
     <img src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo">
 
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <h1 id="trybewarts-header-title" class="header-title">Trybewarts</h1>
 
       <!-- Login -->
 
-    <form action="" method="get" class="trybewarts-login">
+    <form action="" method="get" class="trybewarts-login display-flex">
       <input type="email" placeholder="Login" name="email" id="email-id" class="input-login">
 
       <input type="password" placeholder="Senha" name="senha" id="senha-id" class="input-login">
       
-      <button type="button" id="botao-id" class="btn">Enviar</button>
+      <button type="button" id="botao-id" class="btn">Entrar</button>
     </form>
   </header>
     
     <!-- Formulário de Cadastro e Brasão -->
 
   <main class="display-flex">
+    
+    <form action="" method="GET" id="evaluation-form" class="evaluation-form display-flex">
+          
+      <!-- PRIMEIRO RETÂNGULO -->
+      <div class="display-flex style-div">
+          
+          <!-- Div para Nome e Sobrenome -->
+        <div class="display-flex">
+          <input type="text" id="input-name" class="display-input" placeholder="Nome" name="Nome">
 
-    <form action="" method="GET" id="evaluation-form">
+          <input type="text" id="input-lastname" placeholder="Sobrenome" name="Sobrenome" class="display-input">  
+        </div>
+          
+        <!-- Div para E-mail e Casa -->
+        <div class="display-flex">
+          <input type="email" id="input-email" placeholder="Email" name="Email" class="display-input">
 
-        <!-- Div para Nome e Sobrenome -->
-
-      <div class="display-flex">
-        <input type="text" id="input-name" class="display-input" placeholder="Nome" name="Nome">
-
-        <input type="text" id="input-lastname" placeholder="Sobrenome" name="Sobrenome" class="display-input">  
-      </div>
-      
-      <div class="display-flex">
-        <input type="email" id="input-email" placeholder="Email" name="Email" class="display-input">
-
-        <select name="Casa" id="house" class="display-input">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-      </div>
-
-      <div class="div-border">
+          <select name="Casa" id="house" class="display-input">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+      </div>  
+        
+      <!-- SEGUNDO RETÂNGULO - FAMÍLIA -->
+      <div class="style-div display-flex">
         <label for="" id="label-family" class="label-title">Qual sua família?</label>
-
-        <input type="radio" name="family" id="frontend-id" value="Frontend">
-        <label for="frontend-id">Frontend</label>
-
-        <input type="radio" name="family" id="backend-id" value="Backend">
-        <label for="backend-id">Backend</label>
-     
-        <input type="radio" name="family" id="fullstack-id" value="FullStack">
-        <label for="fullstack-id">FullStack</label>
+          
+        <div>
+          <input type="radio" name="family" id="frontend-id" value="Frontend">
+          <label for="frontend-id">Frontend</label>
+        </div>
+          
+        <div>
+          <input type="radio" name="family" id="backend-id" value="Backend">
+          <label for="backend-id">Backend</label>
+        </div>
+          
+        <div>
+          <input type="radio" name="family" id="fullstack-id" value="FullStack">
+          <label for="fullstack-id">FullStack</label> 
+        </div>
       </div>
-      
+        
+        <!-- TERCEIRO RETÂNGULO - CONTEÚDO -->
+      <div class="style-div display-flex">
+        <label for="" id="label-content" class="label-title">Qual conteúdo você está com mais vontade de aprender?</label>
 
-      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <!-- DIV COM AS CHECKBOX -->
+        <div>
+          <input type="checkbox" class="subject" value="HoFs" name="HoFs" id="hofs-id">
+          <label for="hofs-id">HoFs</label>
 
-      <input type="checkbox" class="subject" value="HoFs" name="HoFs" id="hofs-id">
-      <label for="hofs-id">HoFs</label>
+          <input type="checkbox" class="subject" value="Jest" name="Jest" id="jest-id">
+          <label for="jest-id">Jest</label>
 
-      <input type="checkbox" class="subject" value="Jest" name="Jest" id="jest-id">
-      <label for="jest-id">Jest</label>
+          <input type="checkbox" class="subject" value="Promises" name="Promises" id="promises-id">
+          <label for="promises-id">Promises</label>
 
-      <input type="checkbox" class="subject" value="Promises" name="Promises" id="promises-id">
-      <label for="promises-id">Promises</label>
+          <input type="checkbox" class="subject" value="React" name="React" id="react-id">
+          <label for="react-id">React</label>
 
-      <input type="checkbox" class="subject" value="React" name="React" id="react-id">
-      <label for="react-id">React</label>
+          <input type="checkbox" class="subject" value="SQL" name="SQL" id="sql-id">
+          <label for="sql-id">SQL</label>
 
-      <input type="checkbox" class="subject" value="SQL" name="SQL" id="sql-id">
-      <label for="sql-id">SQL</label>
-
-      <input type="checkbox" class="subject" value="Python" name="Python" id="python-id">
-      <label for="python-id">Python</label>
-
-      <div id="div-avaliation" class="display-flex">
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <input type="checkbox" class="subject" value="Python" name="Python" id="python-id">
+          <label for="python-id">Python</label>
+        </div>
+      </div>
+        
+      <!-- QUARTO RETÂNGULO - AVALIAÇÃO -->
+      <div id="div-avaliation" class="display-flex display-row">
+        <label for="" id="label-rate" class="label-title">Como você avalia a Trybewarts?</label>
       </div>
 
-      <label for="textarea" class="textarea">Deixe seu comentário:</label>
-      <textarea name="Comentário" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      <p id="counter">500 carácteres restante</p>
-
-      <div class="display-flex">
+      <!-- QUINTO RETÂNGULO - TEXTAREA -->
+      <div class="display-flex style-div">
+        <label for="textarea" class="textarea label-title">Deixe seu comentário:</label>
+        <textarea name="Comentário" id="textarea" cols="30" rows="10" maxlength="500" class="display-input"></textarea>
+        <p id="counter" class="counter">500 carácteres restante</p>
+      </div>
+        
+      <!-- CHECKBOX DE CONCORDÂNCIA -->
+      <div class="display-flex agreement">
         <input type="checkbox" name="agreement" id="agreement">
 
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label> 
       </div>
-      
-      <button type="submit" id="submit-btn" class="btn">Enviar</button>
 
+      <!-- BOTÃO SUBMIT -->
+      <button type="submit" id="submit-btn" class="btn btn-submit">Enviar</button>  
+
+<!--     <div id="fullName" class="display-text"></div>
+    <div id="email" class="display-text"></div>
+    <div id="house" class="display-text"></div>
+    <div id="family" class="display-text"></div>
+    <div id="materias" class="display-text"></div>
+    <div id="avaliation" class="display-text"></div>
+    <div id="obs" class="display-text"></div> -->
+      
     </form>
 
-    <img src="images/trybewarts-colored.svg" alt="Simbolo da Trybewarts" id="trybewarts-forms-logo">
+    <img src="images/trybewarts-colored.svg" alt="Simbolo da Trybewarts" id="trybewarts-forms-logo" class="trybewarts-forms-logo">
 
   </main>
 
