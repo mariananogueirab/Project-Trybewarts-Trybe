@@ -43,9 +43,12 @@ checkAgreement.onclick = () => {
 
 const maxCaracteres = 500;
 const textArea = document.querySelector('#textarea');
-const counter = document.querySelector('#counter') 
+const counter = document.querySelector('#counter');
 
 textArea.addEventListener('input', () => {
   const caractereLength = maxCaracteres - textArea.value.length;
   counter.innerText = `${caractereLength} carácteres restantes`;
 });
+
+// Requisito 21:
+
